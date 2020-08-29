@@ -1,3 +1,21 @@
+/* -------------------- */
+/* 	  SASS VARIABLES    */
+/* -------------------- */
+
+// buttons
+$primary-btn-color: purple;
+$primary-btn-color-hover: rgb(165, 25, 165);
+
+// general use colors
+$light-text: rgb(244, 248, 226);
+$dark-text: rgba(0, 0, 0, 0.719);
+
+$main-color: rgb(40, 40, 187);
+$secondary-color: yellow;
+
+// header
+$jumbotron-bg: linear-gradient(45deg, rgb(141, 26, 26), rgb(12, 12, 168));
+
 /* ------------ */
 /* 	  GLOBAL    */
 /* ------------ */
@@ -9,7 +27,7 @@ h1,
 h2,
 h3,
 p {
-	color: rgba(0, 0, 0, 0.719);
+	color: $dark-text;
 	letter-spacing: 0.1rem;
 }
 
@@ -21,18 +39,18 @@ img {
 /* 	BOOTSTRAP OVERRIDES */
 /* -------------------- */
 .jumbotron {
-	background-image: linear-gradient(45deg, rgb(141, 26, 26), rgb(12, 12, 168));
+	background-image: $jumbotron-bg;
 }
 
 /* BUTTONS */
 .btn-primary {
-	background-color: purple;
-	border-color: purple;
+	background-color: $primary-btn-color;
+	border-color: $primary-btn-color;
 }
 
 .btn-primary:hover {
-	background-color: rgba(128, 0, 128, 0.658);
-	border-color: rgba(128, 0, 128, 0.658);
+	background-color: $primary-btn-color-hover;
+	border-color: $primary-btn-color-hover;
 }
 
 /* -------------- */
@@ -40,9 +58,18 @@ img {
 /* -------------- */
 .jumbo-row {
 	min-height: 400px;
+
+	h1,
+	p {
+		color: $light-text;
+	}
 }
 
-.jumbo-row h1,
-.jumbo-row p {
-	color: white;
+.banner {
+	background-color: $main-color;
+	h1,
+	h2,
+	p {
+		color: $light-text;
+	}
 }

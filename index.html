@@ -7,14 +7,105 @@
 		<!-- Boostrap CSS -->
 		<link
 			rel="stylesheet"
-			href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css"
+			href="node_modules/bootstrap/dist/css/bootstrap.css"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+			rel="stylesheet"
 		/>
 
 		<title>Practice Bootstrap</title>
 	</head>
 	<body>
-		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<!-- HEADEER -->
+		<header class="jumbotron jumbotron-fluid mb-0">
+			<div class="container">
+				<div class="row jumbo-row align-items-center">
+					<div class="col">
+						<h1 class="text-uppercase">learning bootstrap practices!</h1>
+						<p>
+							This page should show off some bootstrap stuff. It may not work
+							yet, but the button below should do something.
+						</p>
+						<button class="btn btn-light btn-lg">Click Me!</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<!-- ROW ONE - A SERIOUS WOMAN-->
+			<div class="row p-5 border-bottom">
+				<!-- IMAGE -->
+				<div class="col-xs-12 col-md-4">
+					<img
+						src="https://images.pexels.com/photos/5119214/pexels-photo-5119214.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+						alt="woman-img"
+						class="rounded"
+					/>
+				</div>
+				<!-- CONTENT -->
+				<div
+					class="col d-flex flex-column align-items-center align-items-md-start align-self-center"
+				>
+					<h2 class="text-capitalize pt-3 pt-md-0">some serious woman</h2>
+					<p>
+						Stock photos having serious looking people in them. Lorem ipsum
+						dolor sit amet consectetur adipisicing elit. Vero dolorem veniam a
+						nostrum dolore fuga? Voluptatibus culpa a doloribus unde saepe
+						distinctio quos modi, voluptatum aliquam, perferendis adipisci,
+						suscipit vero.
+					</p>
+					<button class="btn btn-primary">Get Serious</button>
+				</div>
+			</div>
+			<!-- ROW TWO - A SERIOUS MAN -->
+			<div class="row p-5">
+				<!-- CONTENT -->
+				<div
+					class="col d-flex flex-column align-items-center align-self-center order-1 order-md-0"
+				>
+					<h2 class="text-capitalize pt-4 pt-md-0">some concerned man</h2>
+					<p>
+						This guy has some stuff to be serious about as well. Lorem ipsum
+						dolor sit, amet consectetur adipisicing elit. Sint adipisci in rem
+						molestiae, laborum aspernatur esse doloremque amet nobis consectetur
+						animi nam. Vel voluptatibus possimus dolorum ipsum ratione nobis
+						expedita!
+					</p>
+					<button class="btn btn-primary">Get Concerned</button>
+				</div>
+				<!-- IMAGE -->
+				<div class="col-xs-12 col-md-4">
+					<img
+						src="https://images.pexels.com/photos/821748/pexels-photo-821748.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+						alt="guy"
+						class="rounded-sm"
+					/>
+				</div>
+			</div>
+			<!-- BANNER -->
+		</div>
+		<div class="container-fluid">
+			<div class="row p-5 mt-2 banner">
+				<div class="col col-xs-12 col-md-6">
+					<h2 class="border-bottom pb-2 mb-3 text-capitalize">
+						avoid being too serious or concerned
+					</h2>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio
+						suscipit beatae fuga quam culpa rerum temporibus necessitatibus,
+						nostrum consequatur, id quaerat voluptate, veritatis molestiae sed
+						deserunt delectus at non porro.
+					</p>
+				</div>
+				<div class="col col-xs-12 col-md-6 p4">
+					<img src="/assets/icon-happy.png" alt="happy" />
+				</div>
+			</div>
+		</div>
+		<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 	</body>
 </html>

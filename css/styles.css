@@ -1,0 +1,61 @@
+/* -------------------- */
+/* 	  SASS VARIABLES    */
+/* -------------------- */
+/* ------------ */
+/* 	  GLOBAL    */
+/* ------------ */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: rgba(0, 0, 0, 0.719);
+  letter-spacing: 0.1rem;
+}
+
+img {
+  width: 100%;
+}
+
+/* -------------------- */
+/* 	BOOTSTRAP OVERRIDES */
+/* -------------------- */
+.jumbotron {
+  background-image: linear-gradient(45deg, #8d1a1a, #0c0ca8);
+}
+
+/* BUTTONS */
+.btn-primary {
+  background-color: purple;
+  border-color: purple;
+}
+
+.btn-primary:hover {
+  background-color: #a519a5;
+  border-color: #a519a5;
+}
+
+/* -------------- */
+/* CUSTOM CLASSES */
+/* -------------- */
+.jumbo-row {
+  min-height: 400px;
+}
+.jumbo-row h1,
+.jumbo-row p {
+  color: #f4f8e2;
+}
+
+.banner {
+  background-color: #2828bb;
+}
+.banner h1,
+.banner h2,
+.banner p {
+  color: #f4f8e2;
+}
+
+/*# sourceMappingURL=styles.css.map */
